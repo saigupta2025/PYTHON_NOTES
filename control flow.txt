@@ -145,6 +145,49 @@ count += 1
 
 	print("Loop finished. The final count is:", count)
 -----------------------------------------------------------------------------------------------------------------
+JUMPING STATEMENTS::
+1. Break :::The break statement is primarily used to exit from loops prematurely. When encountered inside a loop,
+ it terminates the loop's execution and transfers control to the statement immediately following the loop.
+EX:: 
+
+for i in range(10):
+    
+	if i == 5:
+        
+		print("Breaking out of the loop at i =", i)
+        
+	break  # Exits the loop when i is 5
+ 	   
+	print(i)
+
+print("Loop finished.")
+-------------------------------------------------------------------------------------------------------------------------
+2. The continue statement is used to skip the current iteration of a loop and proceed to the next iteration.
+
+ex::
+
+for i in range(10):
+    if i % 2 == 1:
+        continue
+    print(f"{i} ", end="")
+-------------------------------------------------------------------------------------------------------------------------
+3.
+The pass statement in Python is a null operation; it does nothing when executed. Its primary purpose is to serve as a placeholder 
+where a statement is syntactically required but no action is desired or implemented yet.
+
+Ex::
+    def my_function():
+        pass  # Function body to be implemented later
+
+    class MyClass:
+        pass  # Class definition to be expanded later
+
+    for i in range(5):
+        pass  # Loop body to be added later
+
+    if condition:
+        pass  # Conditional logic to be defined later
+
 
 
 
