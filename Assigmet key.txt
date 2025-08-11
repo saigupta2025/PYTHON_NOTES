@@ -1,0 +1,42 @@
+def second_largest(lst):
+    unique = list(set(lst))
+    unique.sort()
+    return unique[-2]
+
+print(second_largest([10, 20, 4, 45, 99, 99]))
+
+.................................................................................................................
+
+def find_duplicates(lst):
+    seen = set()
+    dupes = set()
+    for item in lst:
+        if item in seen:
+            dupes.add(item)
+        seen.add(item)
+    return list(dupes)
+
+print(find_duplicates([1, 2, 3, 2, 4, 1, 5]))
+# Output: [1, 2]
+........................................................................................................................
+def remove_duplicates(lst):
+    unique = []
+    for item in lst:
+        if item not in unique:
+            unique.append(item)
+    return unique
+
+print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+
+common = set(a) & set(b)
+print(common)  # Output: {3, 4}
+.....................................................................................................
+s = "programming"
+unique_chars = set(s)
+print(unique_chars)
+
+
+
