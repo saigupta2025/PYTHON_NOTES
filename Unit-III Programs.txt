@@ -1,0 +1,124 @@
+Questions:
+
+1. Develop a program to create tuples (name, age, address, college) for atleast two members & concatenate the tuples and print the concatenated tuples;
+ans) 
+# Creating tuples for two members
+std1 = ("Raghu", 22, "Kakinada", "JNTUK")
+std2 = ("suma", 18, "Hyderabad", "IITH")
+
+# Concatenating tuples
+concatenated = std1 + std2
+
+# Printing the result
+print("student 1 Tuple:", std1)
+print("student 2 Tuple:", std2)
+print("Concatenated Tuple:", concatenated)
+.................................................................................................................................................................................................
+2. Develop a program to count the number of vowels in a string(No control flow allowed);
+Ans)
+# Input string
+text = "Python Programming is Awesome"
+
+# Convert to lowercase for uniformity
+text = text.lower()
+
+# Count vowels using sum() + generator expression
+vowel_count = sum(text.count(v) for v in "aeiou")
+
+print("Number of vowels:", vowel_count)
+.........................................................................................................................................................................................................
+3. Develop a program to check if the given key exists in a dict. or not;
+Ans)
+# Create a sample dictionary
+student = {
+    "name": "suma",
+    "age": 18,
+    "college": "IITH",
+    "city": "Hyderabad"
+}
+
+# Key to check
+key = "college"
+
+# Using control flow
+if key in student:
+    print(f"Key '{key}' exists in the dictionary.")
+else:
+    print(f"Key '{key}' does not exist in the dictionary.")
+..................................................................................................................................................................................................................................
+
+4. Develop a program to add a new key-value pair to the existing dict;
+Ans)
+# Existing dictionary
+student = {
+    "name": "suma",
+    "age": 18,
+    "college": "IITH"
+}
+
+print("Before adding:", student)
+
+# Adding a new key-value pair
+student["city"] = "Hyderabad"
+
+print("After adding:", student)
+..............................................................................................................................................................................................................
+
+5. Develop a program to sum all the items in a given dict; 
+Ans)
+# Sample dictionary
+marks = {
+    "Cprogramming": 90,
+    "physics": 85,
+    "chemistry": 88,
+    "english": 92
+}
+
+print("Dictionary:", marks)
+
+# Summing all values
+total = sum(marks.values())
+
+print("Sum of all items in dictionary:", total)
+................................................................................................................................................................................................................
+
+6. Develop a program to perform the following operations on a list:: 1) addition  2) Insertion  3) slicing
+Ans)
+# Initial list
+numbers = [10, 20, 30, 40, 50,60,70]
+print("Original List:", numbers)
+
+# 1) Addition (append new element at the end)
+numbers.append(80)
+print("After Addition (append 80):", numbers)
+
+# 2) Insertion (insert element at specific position)
+numbers.insert(2, 25)   # Insert 25 at index 2
+print("After Insertion (25 at index 2):", numbers)
+
+# 3) Slicing (extract part of the list)
+sliced_list = numbers[1:4]   # from index 1 to 3
+print("Sliced List (index 1 to 3):", sliced_list)
+..................................................................................................................................................................................................................................
+7. Develop a program to perform any 5 built in functions by taking any sample list; 
+Ans)
+# Sample list
+numbers = [10, 25, 7, 42, 18, 66, 36, 44]
+
+print("Original List:", numbers)
+
+# 1) len():: Get length of list
+print("Length of list:", len(numbers))
+
+# 2) max() :: Get maximum element
+print("Maximum value:", max(numbers))
+
+# 3) min() :: Get minimum element
+print("Minimum value:", min(numbers))
+
+# 4) sum()::  Sum of all elements
+print("Sum of all elements:", sum(numbers))
+
+# 5) sorted():: Return sorted list
+print("Sorted List:", sorted(numbers))
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
